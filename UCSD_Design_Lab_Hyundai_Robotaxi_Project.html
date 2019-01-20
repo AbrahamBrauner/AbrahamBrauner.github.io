@@ -6,12 +6,28 @@ p {
   margin: 25px 200px;
 }
 
+li {
+  margin: 0px 250px;
+}
+
 img {
   margin: 25px 200px;
   width:500px;
   /*height:600px;"*/
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 </style>
 <br>
@@ -19,46 +35,89 @@ img {
 <h1 style="text-align:center;">UCSD-Hyundai Robotaxi Project</h1>
 <br>
 <font size="+2">
-
-<p>From October 2018 to January 2019, I worked with the UCSD Design Lab in
-  collaboration with Hyundai Motors to design in-transit activities
-  for autonomous cars.</p>
-<p>It was a huge project, involving over thirty students and staff, and I was
-  involved in every step of the design process. This included some work in
-  large groups, some work in small groups, and some things where I operated
-  autonomously. </p>
-<p>Here are some samples of things I worked on:</p>
+<h4 style="text-align:center;">Overview</h4>
+<p>From October 2018 to January 2019, I had the good fortune of being chosen for a highly selective internship at UC San Diego. </p>
+<p>The project took place at the UCSD Design Lab, founded by renowned design pioneer Don Norman. The purpose of the project was to design in-transit activities for autonomous vehicles (AVs), in collaboration with Hyundai Motors. </p>
+<p>This was a large project, involving more than thirty students and staff, and I was involved in every step of the design process. This included some work in large groups, some in small groups, and some aspects in which I operated individually. </p>
+<p>By the end of the project, we had arrived at a set of working scenarios delivering our collective vision for possible implementations of an interior of an autonomous vehicle that supports specific different activities depending on the user. One example below shows a young boy traveling alone, and a possible design for an AV that would support his travel. </p>
+<img src="teaser.jpg" style="margin:10px 0200px">
 <br>
-<h4 style="text-align:center;">Data Collection and Synthesis</h4>
-<img src="design_phone.jpg" style="margin:10px 0200px">
-<p>This is an example of some data synthesis. I helped consolodate footage,
-  primarily taken on the metro, of what people do in-transit. I also helped
-  collect observations in airports, Uber rides, and of people arriving on
-  campus. We chose to conduct the majority of observations in places other
-  than pritively owned cars, becuase we wanted to design for the activities
-  you could do in autonomous cars of the future; things that people are not
-  currently able to do.</p>
-  <img src="IMG_1095.jpeg">
-<p>Above is a photo I took while observing people waiting in the airport. There
-  are a lot of interesting things to notice here when considering possible design
-  implications of this observation. First, see how the father and daughter are
-  both using mobile technology. As you can see in the first image, this is
-  something that is very common. A good autonomous vehicle (AV) design should
-  take this into account.
-  Second, notice how one kid is in the father's lap. While this might not be
-  ideal for AV's for safety reasons, it is certainly worth noting that this is
-  something people would like to have. As well, the daughter is trying to show
-  her screen to the father. An AV should probably have a seating arrangement
-  that supports this activity sharing.</p>
+<p>To arrive at the point of a deliverable product, we worked through an iterative design process that recursively cycled through the following steps:</p>
+<ol>
+<li>Observation and data collection.</li>
+<li>Identifying patterns and points of interest.</li>
+<li>Organizing our thinking as a group.</li>
+<li>Brainstorming design possibilities.</li>
+<li>Rethinking the logic.</li>
+<li>Delivering a working scenario proposal. </li>
+</ol>
+<br>
+<br>
 
-<h4 style="text-align:center;">Brainstorming</h4>
-  <img src="postit.jpg">
-  <img src="org.jpg">
-  <p>Here is an example scenario we crafted, to showcase some of the features we were designing.</p>
+<h4 style="text-align:center;">Observation and Data Collection</h4>
+<img src="IMG_1095.jpeg">
+<p>Our first step was simply observing without predetermining what we were looking for. Above is a photo I took while observing people waiting in the airport. Seemingly simple moments can offer a good deal of interesting information when considering possible design implications of the observation. </p>
+<p>Here I first noticed that the father and daughter are both using mobile technology. While our group didn’t necessarily need observation to know this, it was striking how common and constant this behavior is. Clearly, good AV design should take this into account. </p>
+<p>Second, I noticed that one child is in the father's lap. While this might not be ideal for AVs for safety reasons, it is certainly worth noting that this is something families do and would likely wish to do in a vehicle. </p>
+<p>Third, I noticed that the daughter is trying to show her screen to the father. Early conclusion: an AV should probably have a seating arrangement that supports activity sharing.</p>
+
+<h4 style="text-align:center;">Identifying Patterns and Points of Interest</h4>
+
+
+<div class="row">
+  <div class="column">
+    <img src="design_phone.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Trash.jpg" style="width:100%">
+  </div>
+  <!--<div class="column">
+    <img src="Activities.jpg" style="width:100%">
+  </div>-->
+</div>
+
+
+<p>Next, we took the images we had individually collected and consolidated them to identify patterns. I had a major role in this aspect of data synthesis. Our goal now was to create an understanding of what people do in-transit. Many images were taken on the San Diego Metro. I collected observations in airports, on Uber rides, and of people arriving on campus. We chose to conduct the majority of observations away from privately owned cars, because we wanted to design for the activities people might do in the autonomous cars of the future, things that people are not currently able to do, and did not want to bias our view of the possible. </p>
+
+<h4 style="text-align:center;"> Organizing our Thinking</h4>
+
+
+<div class="row">
+  <div class="column">
+    <img src="postit.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="org.jpg" style="width:100%">
+  </div>
+</div>
+
+<p>As with any group of individuals working toward a common goal, there were organizational challenges. I played a key role in thinking about and managing our process so as to optimally balance creativity and efficiency, and coordinate the various aspects of a large project.
+</p>
+
+<h4 style="text-align:center;"> Brainstorming Possibilities</h4>
+<img src="table.jpg" style="width:60%">
+<p>I take greatest pride in this aspect of the project, when it was time to take observations and begin coming up with ideas of different ways that people might wish to use the interior of an AV. Some different examples included: [Abie write 3-5 things]
+</p>
+
+<h4 style="text-align:center;"> Rethinking the Logic</h4>
+ [Image: rotated pdf, cute but readable]
+
+<p>At this point in the project I was inspired to think through my own new understandings of what does and does not make sense for autonomous vehicles. This was not a formal aspect of the project, but work I did on my own initiative to organize my thinking.
+</p>
+
+<h4 style="text-align:center;"> Working Scenario Proposal</h4>
+<p>Ultimately, our group was able to land on multiple scenarios for the interior of autonomous vehicles. Here is a full example scenario we crafted, to showcase some of the features we were designing.</p>
+
+
   <img src="scenario.jpg">
   <img src="scenario2.jpg">
   <img src="scenario3.jpg">
   <img src="scenario4.jpg">
+
+
+<h4 style="text-align:center;"> Conclusion</h4>
+  <p>I learned a good deal working on this project, and am grateful for the opportunity the internship provided to learn observation and design skills, as well as organizational thinking and team participation. I have a greater appreciation of the challenges and rewards of the iterative design process.
+</p>
 
 
 
